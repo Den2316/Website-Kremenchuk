@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kremenchuk website</title>
+</head>
+<body>
+
+    <!-- Creating a header and first page-->
+    
+    <section class="intro-page">
+        <header>
+        <div class="navigation">
+            <img src="img/kremenchuk_logo.jpg">
+            <a id="city-logo" href ="index.html">Kremenchuk's tourism website</a>
+            <a href ="#history" class ="navigation-list">History</a>
+            <a href ="#architecture" class ="navigation-list">Architecture</a>
+            <a href ="#food" class ="navigation-list">Food</a>
+            <a href ="#nature" class ="navigation-list">Nature</a>
+            <a href ="#famous-people" class ="navigation-list">Famous people</a>
+            <a href ="#future" class ="navigation-list">Future</a>
+            <a href ="#contacts" class ="navigation-list">Contact us</a>
+            <a href ="#" class ="navigation-list" id="sign-in">Sign in</a>
+        </div>
+        </header>
+        <div class="sign-in hidden">
+            <p>Please enter sign-in data</p>
+            <button id="close-sign-in"></button>
+            <form>
+                <label for="email-sign-in">Your email</label>
+                <input type="email" id="email-sign-in" name="email" placeholder="Your email">
+                <label for="password">Your password</label>
+                <input type="password" id="password" name="password" placeholder="Your password">
+            </form>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset input</button>
+        </div>
+        <h1>Visit Kremenchuk today, stay happy forever</h1>
+        <p>Official website of Kremenchuk for tourists</p>
+        <div class="links-from-intro">
+            <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%B3%D0%B8_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)" class="links-from-intro-list">
+                <p> Attractions</p>
+                <p> Peremohy Square in Kremenchuk</p>
+            </a>
+            <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%A7%D1%83%D0%B4%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%86%D1%8F_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)" class="links-from-intro-list">
+                <p> Architecture</p>
+                <p> Saint Nicholaus Church - one of the most sophisticated buildings in Kremenchuk</p>
+            </a>
+            <a href="https://www.facebook.com/Celentano.kremenchug/" class="links-from-intro-list">
+                <p>Food</p>
+                <p>The best pizza in our city</p>
+            </a>
+            <a href="https://www.booking.com/city/ua/kremenchuk.uk.html" class="links-from-intro-list">
+                <p>Where to stay</p>
+                <p>Find top hotels to spend night at</p>
+            </a>
+        </section>
+    </div>
+
+    <!--Creating section of history-->
+    
+    <section id="history">
+        <h2>History</h2>
+        <div class="history-intro">
+            <article>
+                <a href="history.html">
+                First arhceological evidence of people's life on the territory of Kremenchuk are dated back to V-III millenium BC. Though official date when the city was created, is considered to be 1571...
+                </a>
+                <img src="img/kremenchuk-vokzal-very-old.jpg" alt="A railway station of Kremenchuk, Russian Empire times">
+            </article>
+        </div>
+    </section>
+
+    <!--Creating section of architecture and carousel-->
+    
+    <section id="architecture">
+        <h2>Architecture</h2>
+        <div class="architecture-carousel">
+            <div id="architecture-carousel-1">
+                <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%A7%D1%83%D0%B4%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%86%D1%8F_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)">
+                    <h3>Saint Nicholaus Church</h3>
+                    <article>
+                        Built in 1910, times when Ukraine was a part of Russian Empire, the Church became one of the symbols of Kremenchuk. In Soviet times Church was never used for praying, but only used for administrational aims. Since in 1991 the USSR has broken down, activity in the Church came back to its original purposes and nowadays it functions as one of the churches of Ukrainian Orthodoxy.
+                    </article>
+                    <img src="img/saint-nicholaus-church.jpg">
+                </a>
+            </div>
+            <div id="architecture-carousel-2">
+                <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D1%8E%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D1%96%D1%81%D1%82">
+                    <h3>Kryukiv Bridge</h3>
+                    <article>
+                        First bridge on Dnipro river was built in 1879, however it was destroyed during WW2. In 1949 a new, Kryukiv Bridge, was constructed.It has length of 1.7 kilometers, supports both car, railway traffic, and has an option to be lifted in case of massive ferries wanting to drive through it. Nowadays this bridge is the only connection between two banks of Kremenchuk, however there are plans to build new bridges nearby. 
+                    </article>
+                    <img src="img/bridge-big-extension.jpg">
+                </a>
+            </div>
+            <div id="architecture-carousel-3">
+                <a href="https://uk.wikipedia.org/wiki/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%94%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D0%91%D0%B0%D0%BD%D0%BA%D1%83_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)">
+                    <h3>Governmental Bank</h3>
+                    <article>
+                        Governmental Bank was built in 1900 and designed to be an official bank of Russian Empire. What's interesting about this place, is that it was one of not so many old buildings in Kremenchuk to survive WW2, avoid any harmful modifications since 1900 and still stand in the centre of the city.
+                    </article>
+                    <img src="img/derzhbank.jpg">
+                </a>
+            </div>
+            <div id="architecture-carousel-4">
+                <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BA%D0%B8_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA%D0%B0">
+                    <h3>See more</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Creating section of food and carousel-->
+    
+    <section id="food">
+        <h2>Food review</h2>
+        <div class="food-carousel">
+            <div id="food-carousel-1">
+                <a href="https://www.facebook.com/Celentano.kremenchug/">
+                <h3>Celentano restaurant</h3>
+                </a>
+                <article>
+                    The best of the best to taste good old Italian cuizine. We strongly recommend this place.
+                </article>
+                <img src="img/celentano.jpg">
+            </div>
+            <div id="food-carousel-2">
+                    <a href="https://4sezona.pl.ua/">
+                    <h3>4 seasons restaurant</h3>
+                    </a>
+                    <article>
+                        Not the cheapest restaurant, but here you can afford having a great business lunch in a daytime, and pleasant dinner in the evening.
+                    </article>
+                    <img src="img/4season.jpg">
+            </div>
+            <div id="food-carousel-3">
+                <a href="https://www.facebook.com/leveelounge/">
+                <h3>Levee restaurant</h3>
+                </a>
+                <article>
+                    It is not situated inside of Kremenchuk, but it is not far from our city. In our opinion, the best restaurant among all in Kremenchuk region.Located on the bank of Kremenchuk Sea, absolutely worth visiting.
+                </article>
+                <img src="img/levee.jpg">
+            </div>
+            <div id="food-carousel-4">
+                <a href="http://kofan.ua/">
+                <h3>Kofan</h3>
+                </a>
+                <article>
+                    A cheap, comfortable,peaceful cafe in the center of the city. A best place to drink coffee and eat waffles. On Friday's evenings a live music is performed.
+                </article>
+                <img src="img/kofan-webkremenchug.jpg">
+            </div>
+            <div id="food-carousel-5">
+                <a href="https://www.hutirec.com/">
+                <h3>Hutirec</h3>
+                </a>
+                <article>
+                    You can taste national Ukrainian cuizine here. Must visit for those, who wish to eat a lot of different Ukrainian dishes.
+                </article>
+                <img src="img/hutirec.jpg">
+            </div>
+            <div id="food-carousel-6">
+                <a href="https://www.kremenchuk.pizza-nys.com.ua/">
+                <h3>New York Street Pizza restaurant</h3>
+                </a>
+                <article>
+                    If you didn't like Celentano, or just with to diversify your meal, visit this restaurant and eat some pizza here!
+                </article>
+                <img src="img/new-york-street-pizza.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--Creating section of Nature-->
+    
+    <section id="nature">
+        <h2>Nature</h2>
+        <div class="nature-article-and-carousel">
+            <article>
+                What natural landscapes can you see in Kremenchuk? What to visit to enjoy your time here? Well, you may start with visiting Park of Peace to see a landscape of all Kremenchuk, continue with Miskyi Sad with fragrant swans and lake, and finish with a bank of Dnipro river. All of these places are must see in Kremenchuk. Though, we have much more to see. <a href="nature.html">Click here for more -></a>
+            </article>
+            <div class="nature-carousel">
+                <img src="img/park-myru.jpg">
+                <img src="img/miskyi-sad-3.jpg">
+                <img src="img/kremenchuk-rech-port.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--Creating section of Famous People-->
+    
+    <section id="famous-people">
+        <h2>Famous people in Kremenchuk</h2>
+        <div class="famous-people-intro">
+            <article>
+                Our city is full of famous people, whose lives were connected with Kremenchuk. In different times we had such events related to famous people:
+                <ul>
+                    <li>Kremenchuk was visited by Kotlyarevskyi, Lysenko, Gogol, Pushkin, Kateryna II</li>
+                    <li>Taras Shevchenko visited our city and wrote a poem about it</li>
+                    <li>Kremenchuk was a place to work in for Vernadskyi, Utyosov, Maiboroda</li>
+                </ul>
+                If you want to learn more, <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA#%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D0%BE%D1%81%D1%82%D1%96">
+                click here</a>
+            </article>
+            <div class="famous-people-images">
+                <img src="img/shevchenko.jpg" alt="Taras Shevchenko">
+                <img src="img/gogol.jpg" alt ="Mykolai Gogol">
+                <img src="img/kotlyarevskiy.jpg" alt="Ivan Kotlyarevskyi">
+                <img src="img/pushkin.jpg" alt="Alexandr Pushkin">
+            </div>
+        </div>
+    </section>
+
+    <!--Creating section of Future-->
+    
+    <section id="future">
+        <h2>Future of Kremenchuk</h2>
+        <div class="future-plans">
+            <article>
+                If till this point you thought about our past only, now lets envision some future of Kremenchuk.
+                A main news for Kremenchuk nowadays is a news that new bridge is going to be built on the Dnipro river. Building works have already started in 2021, so hopefully in next years our city will get a new vital infrastructural object. Works are performed with help of Turkish constructors.
+                If you want to read about other news and future plans of Kremenchuk, feel free to read it from our <a href="https://kg.ua/">newspaper</a>
+            </article>
+            <img src="img/new-bridge.jpg">
+        </div>
+    </section>
+
+    <!--Creating section of Contacts-->
+    
+    <section id="contacts">
+        <h2>Contact us</h2>
+        <div class="contact-form">
+            <form>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name">
+
+                <p>What is the point of your message?</p>
+                <div>
+                    <input type="radio" id="thanks" name="point-of-message" value="thanks">
+                    <label for="thanks">Say thank you to the website's creator👍</label>
+                </div>
+                <div>
+                    <input type="radio" id="problem" name="point-of-message" value="problem">
+                    <label for="problem">Want to note there's a problem in website's work😠</label>
+                </div>
+                <div>
+                    <input type="radio" id="information" name="point-of-message" value="information">
+                    <label for="information">Want to provide you with a new information ℹ️</label>
+                </div>
+                <div>
+                    <input type="radio" id="cooperation" name="point-of-message" value="cooperation">
+                    <label for="cooperation">Have an idea of cooperation🧑‍💼</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="point-of-message" value="other">
+                    <label for="other">Other 🙈</label>
+                </div>
+
+                <label for="email-input">Your email </label>
+                <input type="email" id="email-input" name="email" placeholder="Your email">
+
+                <label for="message">Your message </label>
+                <input type="text" id="message" name="message" placeholder="Your message">
+            </form>
+            <button type="submit">Submit your request</button>
+        </div>
+    </section>
+    <footer>
+        <div class="navigation">
+            <p>Created by Denys Brashchenko as a pet project</p>
+            <img src="img/kremenchuk_logo.jpg">
+            <a id="city-logo" href ="index.html">Kremenchuk's tourism website</a>
+            <a href ="#history" class ="navigation-list">History</a>
+            <a href ="#architecture" class ="navigation-list">Architecture</a>
+            <a href ="#food" class ="navigation-list">Food</a>
+            <a href ="#nature" class ="navigation-list">Nature</a>
+            <a href ="#famous-people" class ="navigation-list">Famous people</a>
+            <a href ="#future" class ="navigation-list">Future</a>
+            <a href ="#contacts" class ="navigation-list">Contact us</a>
+        </div>
+    </footer>
+</body>
+</html>
