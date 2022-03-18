@@ -5,57 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kremenchuk website</title>
+    <link rel="shortcut icon" type="image/png" href="img/kremenchuk_logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Creating a header and first page-->
-    
-    <section class="intro-page">
         <header>
-        <div class="navigation">
-            <img src="img/kremenchuk_logo.jpg">
-            <a id="city-logo" href ="index.html">Kremenchuk's tourism website</a>
-            <a href ="#history" class ="navigation-list">History</a>
-            <a href ="#architecture" class ="navigation-list">Architecture</a>
-            <a href ="#food" class ="navigation-list">Food</a>
-            <a href ="#nature" class ="navigation-list">Nature</a>
-            <a href ="#famous-people" class ="navigation-list">Famous people</a>
-            <a href ="#future" class ="navigation-list">Future</a>
-            <a href ="#contacts" class ="navigation-list">Contact us</a>
-            <a href ="#" class ="navigation-list" id="sign-in">Sign in</a>
-        </div>
+            <nav class="navigation">
+                <img src="img/kremenchuk_logo.jpg" class="logo">
+                <a href ="index.html" class="navigation-list">Kremenchuk's tourism website</a>
+                <a href ="#history" class ="navigation-list">History</a>
+                <a href ="#architecture" class ="navigation-list">Architecture</a>
+                <a href ="#food" class ="navigation-list">Food</a>
+                <a href ="#nature" class ="navigation-list">Nature</a>
+                <a href ="#famous-people" class ="navigation-list">Famous people</a>
+                <a href ="#future" class ="navigation-list">Future</a>
+                <a href ="#contacts" class ="navigation-list">Contact us</a>
+                <a href ="#" class ="navigation-list sign-in-button">Sign in</a>
+            </nav>
         </header>
-        <div class="sign-in hidden">
-            <p>Please enter sign-in data</p>
-            <button id="close-sign-in"></button>
-            <form>
+        <aside class="sign-in hidden">    
+                <button class="close-sign-in hidden">Close</button>
+                <p class="sign-in-paragraph">Please enter sign-in data</p>
+                <form class="sign-in-form" >
                 <label for="email-sign-in">Your email</label>
                 <input type="email" id="email-sign-in" name="email" placeholder="Your email">
                 <label for="password">Your password</label>
                 <input type="password" id="password" name="password" placeholder="Your password">
+                <button type="submit" class="form-button">Submit</button>
+                <button type="reset" class="form-button">Reset input</button>
             </form>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset input</button>
-        </div>
-        <h1>Visit Kremenchuk today, stay happy forever</h1>
-        <p>Official website of Kremenchuk for tourists</p>
-        <div class="links-from-intro">
-            <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%B3%D0%B8_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)" class="links-from-intro-list">
-                <p> Attractions</p>
-                <p> Peremohy Square in Kremenchuk</p>
-            </a>
-            <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%A7%D1%83%D0%B4%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%86%D1%8F_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)" class="links-from-intro-list">
-                <p> Architecture</p>
-                <p> Saint Nicholaus Church - one of the most sophisticated buildings in Kremenchuk</p>
-            </a>
-            <a href="https://www.facebook.com/Celentano.kremenchug/" class="links-from-intro-list">
-                <p>Food</p>
-                <p>The best pizza in our city</p>
-            </a>
-            <a href="https://www.booking.com/city/ua/kremenchuk.uk.html" class="links-from-intro-list">
-                <p>Where to stay</p>
-                <p>Find top hotels to spend night at</p>
-            </a>
+        </aside>
+            <section class="intro-page">
+            <h1>Visit Kremenchuk today, stay happy forever</h1>
+            <p class="intro-paragraph">Official website of Kremenchuk for tourists</p>
+            <div class="intro-image-links">
+                <div>
+                <img src="img/miskyi-sad-2.jpg" class="miskyi-sad">
+                </div>
+                <div class="links-from-intro">
+                    <div class="intro-part-1">
+                        <p class="intro-paragraph"> Attractions</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%BE%D0%B3%D0%B8_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)" class="links-from-intro-list">
+                            <p> Peremohy Square in Kremenchuk</p>
+                        </a>
+                    </div>
+                    <div class="intro-part-2">
+                        <p class="intro-paragraph"> Architecture</p>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%A7%D1%83%D0%B4%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D1%86%D1%8F_(%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA)" class="links-from-intro-list">
+                            <p> Saint Nicholaus Church - one of the most sophisticated buildings in Kremenchuk</p>
+                        </a>
+                    </div>
+                    <div class="intro-part-3">
+                        <p class="intro-paragraph">Food</p>
+                        <a href="https://www.facebook.com/Celentano.kremenchug/" class="links-from-intro-list">
+                            <p>The best pizza in our city</p>
+                        </a>
+                    </div>
+                    <div class="intro-part-4">
+                        <p class="intro-paragraph">Where to stay</p>
+                        <a href="https://www.booking.com/city/ua/kremenchuk.uk.html" class="links-from-intro-list">
+                            <p>Find top hotels to spend night at</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -286,5 +303,6 @@
             <a href ="#contacts" class ="navigation-list">Contact us</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

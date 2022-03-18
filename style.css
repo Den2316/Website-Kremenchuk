@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  font-size: 16px;
+  font-family: 'Roboto Serif', serif;
+  width: 1530px;
+  height: auto;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  padding-left: 150px;
+}
+aside form label {
+  background-color: rgb(51, 51, 122);
+  color: rgb(243, 212, 201);
+  margin-left: 200px;
+}
+aside form input {
+  background-color: rgb(243, 212, 201);
+}
+a:link {
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.navigation {
+  padding-bottom: 10px;
+  background-color: coral;
+  display: block;
+  height: auto;
+}
+.logo {
+  width: 40px;
+  height: auto;
+  margin: 10px 0px 0px 50px;
+}
+.navigation-list {
+  background-color: coral;
+  margin-left: 50px;
+  align-items: top;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navigation:hover {
+  background-color: rgb(48, 25, 16);
+  transition: 3s;
+}
+.navigation-list:link,
+.navigation-list:visited {
+  text-decoration: none;
+}
+.navigation-list:hover,
+.navigation-list:active {
+  background-color: rgb(48, 25, 16);
+  transition: 1s;
+  border-radius: 2px;
+  color: white;
+  font-size: 16.5px;
+}
+.sign-in {
+  position: absolute;
+  width: 800px;
+  height: 450px;
+  background-color: rgb(51, 51, 122);
+  margin: 30px 0px 0px 200px;
+  border-radius: 10px;
+  border: 1px solid navy;
+}
+.sign-in-paragraph {
+  font-size: 26px;
+  text-align: center;
+  background-color: rgb(51, 51, 122);
+  color: rgb(243, 212, 201);
+  margin: 50px 0px;
+}
+.close-sign-in {
+  position: inherit;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: coral;
+}
+.close-sign-in:hover {
+  background-color: rgb(48, 25, 16);
+  transition: 0.5s;
+  color: white;
+  font-size: 16.5px;
+  cursor: pointer;
+}
+.sign-in-form {
+  font-size: 20px;
+  background-color: rgb(51, 51, 122);
+  margin: 0px 30px;
+}
+#email-sign-in {
+  width: 50%;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-left: 200px;
+  display: block;
+}
+#password {
+  width: 50%;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-left: 200px;
+  display: block;
+}
+.form-button {
+  width: 150px;
+  margin-left: 150px;
+  background-color: coral;
+  border-radius: 5px;
+}
+.form-button:hover {
+  background-color: rgb(48, 25, 16);
+  transition: 0.5s;
+  color: white;
+  font-size: 16.5px;
+  cursor: pointer;
+}
+.intro-page {
+  height: 640px;
+  background-color: rgba(52, 36, 158, 0.61);
+  padding-top: 80px;
+}
+.intro-paragraph {
+  font-size: 20px;
+  padding-left: 150px;
+}
+
+.intro-image-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.links-from-intro {
+  margin-left: 150px;
+}
+
+.miskyi-sad {
+  width: 440px;
+  margin-left: 150px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.intro-part-1,
+.intro-part-2,
+.intro-part-3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+.intro-part-4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.intro-part-1:hover,
+.intro-part-2:hover,
+.intro-part-3:hover,
+.intro-part-4:hover {
+  color: white;
+  transition: 0.5s;
+  font-size: 22px;
+}
+.intro-part-1:link,
+.intro-part-2:link,
+.intro-part-3:link,
+.intro-part-4:link {
+  text-decoration: none;
+  color: black;
+}
+.links-from-intro-list {
+  color: rgb(14, 27, 145);
+}
+.miskyi-sad:hover {
+  width: 500px;
+  transition: 1s;
+}
