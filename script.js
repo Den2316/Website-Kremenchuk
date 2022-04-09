@@ -5,6 +5,7 @@ const signIn = document.querySelector('.sign-in');
 const signInButton = document.querySelector('.sign-in-button');
 const hidden = document.querySelector('.hidden');
 const closeSignIn = document.querySelector('.close-sign-in');
+
 const nextSlideArch = document.querySelector('.next-slide');
 const previousSlideArch = document.querySelector('.previous-slide');
 let currentSlideArch = 1;
@@ -14,7 +15,13 @@ const currentSlideArch3 = document.querySelector(`.architecture-carousel-3`);
 const currentSlideArch4 = document.querySelector(`.architecture-carousel-4`);
 let beforeSlideArch = currentSlideArch - 1;
 
-//Modal sign-in menu
+const currentSlideNature1 = document.querySelector('.nature-1');
+const currentSlideNature2 = document.querySelector('.nature-2');
+const currentSlideNature3 = document.querySelector('.nature-3');
+
+
+// Modal window close and open
+
 
 signInButton.addEventListener('click', function () {
   signIn.classList.remove('hidden');
@@ -44,7 +51,6 @@ nextSlideArch.addEventListener('click', function () {
     currentSlideArch4.classList.add('hidden');
     currentSlideArch = 1;
     currentSlideArch1.classList.remove('hidden');
-    console.log(currentSlideArch);
   }
 });
 
@@ -71,5 +77,25 @@ previousSlideArch.addEventListener('click', function () {
 
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
-  console.log(scrolled);
 });
+
+
+//Nature section auto slide show
+
+let autoSlideNatureChange1 = function () {
+      currentSlideNature1.classList.add('hidden');
+      currentSlideNature2.classList.remove('hidden');
+    }
+let autoSlideNatureChange2 = function () {
+      currentSlideNature2.classList.add('hidden');
+      currentSlideNature3.classList.remove('hidden');
+    }
+let autoSlideNatureChange3 = function () {
+      currentSlideNature3.classList.add('hidden');
+      currentSlideNature1.classList.remove('hidden');
+    }
+setInterval(autoSlideNatureChange1, 4000);
+setInterval(autoSlideNatureChange2, 8000);
+setInterval(autoSlideNatureChange3, 12000);
+
+

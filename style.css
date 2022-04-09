@@ -23,6 +23,7 @@ aside form input {
 }
 a:link {
   text-decoration: none;
+  color:rgb(61, 83, 17);
 }
 .hidden {
   display: none;
@@ -407,3 +408,41 @@ h2 {
   color: olivedrab;
   padding-left: 50px;
 }
+
+#nature{
+  background-color: rgba(52, 36, 158, 0.61);
+  height:900px;
+}
+#nature img{
+  width:500px;
+  height:auto;
+  margin-left:500px;
+  margin-top:30px;
+  margin-bottom:30px;
+  filter:drop-shadow(20px 20px 20px grey);
+  border:5px solid black;
+}
+#nature article:first-child{
+  color:coral;
+  margin-left:150px;
+  margin-bottom:10px;
+}
+#nature article{
+  margin-left:50px;
+  font-size:30px;
+  line-height: 40px;
+}
+
+#nature article:nth-child(2)::first-letter{
+  font-size:45px;
+  color:rgb(31, 28, 28)
+}
+h4{
+  font-size:30px;
+  margin-left:640px;
+  width:200px;
+  padding:20px 0px 10px 50px;
+  background-color: rgb(175, 190, 190);
+  border-radius: 30px;
+}
+
