@@ -4,8 +4,9 @@ body {
   background-color: beige;
   font-size: 16px;
   font-family: 'Roboto Serif', serif;
-  width: 1530px;
+  width: 1520px;
   height: auto;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 50px;
@@ -31,6 +32,8 @@ a:link {
   background-color: coral;
   display: block;
   height: auto;
+  position: fixed;
+  width: 100%;
 }
 .logo {
   width: 40px;
@@ -48,7 +51,7 @@ a:link {
 
 .navigation:hover {
   background-color: rgb(48, 25, 16);
-  transition: 3s;
+  transition: 1s;
 }
 .navigation-list:link,
 .navigation-list:visited {
@@ -62,14 +65,15 @@ a:link {
   color: white;
   font-size: 16.5px;
 }
-.sign-in {
-  position: absolute;
+aside {
+  position: fixed;
   width: 800px;
   height: 450px;
   background-color: rgb(51, 51, 122);
-  margin: 30px 0px 0px 200px;
+  margin: 150px 0px 0px 400px;
   border-radius: 10px;
   border: 1px solid navy;
+  box-shadow: 0px 300px 30px 900px rgba(76, 70, 70, 0.685);
 }
 .sign-in-paragraph {
   font-size: 26px;
@@ -184,4 +188,222 @@ a:link {
 .miskyi-sad:hover {
   width: 500px;
   transition: 1s;
+}
+
+#history {
+  height: 730px;
+  background-color: rgb(139, 114, 80);
+  margin-top: -35px;
+}
+h2 {
+  padding: 50px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  width: 20%;
+  border-left: 15px solid black;
+  border-top: 15px solid black;
+}
+.history-intro article {
+  display: flex;
+  gap: 100px;
+  height: 450px;
+  justify-content: space-around;
+  align-items: center;
+}
+.history-article {
+  color: black;
+  font-size: 35px;
+  flex: 0.5 1 200px;
+}
+.history-article:hover {
+  padding-left: 20px;
+  transition: 1s;
+}
+.click-to-see {
+  border: 4px solid white;
+  background-color: coral;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-left: 110px;
+  width: 800px;
+  padding: 5px;
+}
+.click-to-see:hover {
+  background-color: black;
+  color: coral;
+  transition: 0.5s;
+  font-size: 24px;
+}
+.history-intro article img {
+  width: 400px;
+  height: auto;
+}
+#architecture {
+  background-color: rgba(52, 36, 158, 0.61);
+  padding-top: 1px;
+  height: 1000px;
+}
+.architecture-carousel-1 {
+  margin-left: 350px;
+  height: 610px;
+  width: 700px;
+  background-image: url(img/saint-nicholaus-church.jpg);
+  background-size: cover;
+}
+#architecture-carousel-1-text {
+  padding-top: 50px;
+  width: 300px;
+  padding-left: 25px;
+}
+.previous-slide {
+  position: absolute;
+  top: 1673px;
+  left: 350px;
+  width: 70px;
+  height: 610px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+.previous-slide:hover {
+  width: 80px;
+  transition: 0.3s;
+  background-color: rgba(158, 155, 155, 0.212);
+}
+.next-slide {
+  position: absolute;
+  top: 1673px;
+  right: 470px;
+  width: 70px;
+  height: 610px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+.next-slide:hover {
+  width: 80px;
+  transition: 0.3s;
+  background-color: rgba(158, 155, 155, 0.233);
+}
+.architecture-carousel-2 {
+  margin-left: 350px;
+  height: 610px;
+  width: 700px;
+  background-image: url(img/bridge-big-extension.jpg);
+  background-size: cover;
+}
+#architecture-carousel-2-text {
+  padding-top: 330px;
+  width: 300px;
+  padding-left: 55px;
+  color: whitesmoke;
+}
+.architecture-carousel-3 {
+  margin-left: 350px;
+  height: 610px;
+  width: 700px;
+  background-image: url(img/derzhbank.jpg);
+  background-size: cover;
+}
+#architecture-carousel-3-text {
+  padding-top: 60px;
+  width: 300px;
+  padding-left: 370px;
+  color: white;
+  font-weight: bold;
+}
+.architecture-carousel-4 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-left: 350px;
+  height: 610px;
+  width: 700px;
+  background-color: rgba(255, 228, 196, 0.682);
+  padding-left: 150px;
+  padding-top: 250px;
+  font-size: 30px;
+}
+.architecture-carousel-4:hover {
+  font-size: 40px;
+  padding-left: 90px;
+  padding-top: 230px;
+  transition: 1s;
+}
+.food-grid {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 400px 400px 500px;
+  column-gap: 60px;
+  row-gap: 50px;
+  grid-template-rows: 300px 300px;
+  margin-left: 100px;
+}
+.food-grid img {
+  height: 170px;
+  width: auto;
+}
+#food-grid-1:hover,
+#food-grid-2:hover,
+#food-grid-3:hover,
+#food-grid-4:hover,
+#food-grid-5:hover,
+#food-grid-6:hover {
+  background-color: black;
+  transition: 2s;
+  color: white;
+  border-radius: 20px;
+}
+#food-grid-1 img {
+  margin-left: 100px;
+  border: 3px solid red;
+  margin-top: 5px;
+}
+#food-grid-1,
+#food-grid-2,
+#food-grid-3,
+#food-grid-4,
+#food-grid-5,
+#food-grid-6 {
+  padding-top: 10px;
+}
+#food-grid-2 img {
+  margin-left: 70px;
+  border: 3px solid red;
+}
+#food-grid-3 img {
+  margin-left: 165px;
+  border: 3px solid red;
+}
+#food-grid-4 img {
+  margin-left: 30px;
+  border: 3px solid red;
+  margin-top: 5px;
+}
+#food-grid-5 img {
+  margin-left: 70px;
+  border: 3px solid red;
+  margin-top: 5px;
+}
+#food-grid-6 img {
+  margin-left: 130px;
+  border: 3px solid red;
+  margin-top: 5px;
+}
+.food-grid-text-1,
+.food-grid-text-2,
+.food-grid-text-3,
+.food-grid-text-4,
+.food-grid-text-5,
+.food-grid-text-6 {
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+.food-grid-text-1 a,
+.food-grid-text-2 a,
+.food-grid-text-3 a,
+.food-grid-text-4 a,
+.food-grid-text-5 a,
+.food-grid-text-6 a {
+  color: olivedrab;
+  padding-left: 50px;
 }
