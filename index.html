@@ -40,7 +40,48 @@
             </form>
         </aside>
         <div class="wrap">
-            <section class="intro-page">
+            <section class="intro-page" id="intro-page">
+                <div class="cart hidden">
+                    <h3>Cart</h3>
+                    <div class="product-1-cart hidden">
+                        <h4>T-shirt</h4>
+                        <p class="product-1-amount"></p>
+                        <p class="product-1-price"></p>
+                    </div>
+                    <div class="product-2-cart hidden">
+                        <h4>Cap</h4>
+                        <p class="product-2-amount"></p>
+                        <p class="product-2-price"></p>
+                    </div>
+                    <div class="product-3-cart hidden">
+                        <h4>Tattoo</h4>
+                        <p class="product-3-amount"></p>
+                        <p class="product-3-price"></p>
+                    </div>
+                    <div class="product-4-cart hidden">
+                        <h4>Cup</h4>
+                        <p class="product-4-amount"></p>
+                        <p class="product-4-price"></p>
+                    </div>
+                    <div class="product-5-cart hidden">
+                        <h4>Sticker</h4>
+                        <p class="product-5-amount"></p>
+                        <p class="product-5-price"></p>
+                    </div>
+                    <div class="product-6-cart hidden">
+                        <h4>Phone Case</h4>
+                        <p class="product-6-amount"></p>
+                        <p class="product-6-price"></p>
+                    </div>
+                    <div class="total">
+                        <h4>Total Quantity:</h4>
+                        <p class="total-quantity"></p>
+                        <h4>Total Price:</h4>
+                        <p class="total-price"></p>
+                        <button type="reset" class="erase">Erase</button>
+                        <button class="checkout" type="submit">Proceed to Checkout</button>
+                    </div>
+                </div>
                 <h1>Visit Kremenchuk today, stay happy forever</h1>
                 <p class="intro-paragraph">Official website of Kremenchuk for tourists</p>
                     <div class="intro-image-links">
@@ -239,17 +280,19 @@
     <section id="famous-people">
         <!-- A grid with photos -->
         <h2>Famous people in Kremenchuk</h2>
-        <div class="famous-people-intro">
-            <article>
-                Our city is full of famous people, whose lives were connected with Kremenchuk. In different times we had such events related to famous people:
-                <ul>
-                    <li>Kremenchuk was visited by Kotlyarevskyi, Lysenko, Gogol, Pushkin, Kateryna II</li>
-                    <li>Taras Shevchenko visited our city and wrote a poem about it</li>
-                    <li>Kremenchuk was a place to work in for Vernadskyi, Utyosov, Maiboroda</li>
-                </ul>
-                If you want to learn more, <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA#%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D0%BE%D1%81%D1%82%D1%96">
-                click here</a>
-            </article>
+        <div class="famous-people">
+            <div class="famous-people-intro">
+                <article>
+                    Our city is full of famous people, whose lives were connected with Kremenchuk. In different times we had such events related to famous people:
+                    <ul>
+                        <li>Kremenchuk was visited by Kotlyarevskyi, Lysenko, Gogol, Pushkin, Kateryna II</li>
+                        <li>Taras Shevchenko visited our city and wrote a poem about it</li>
+                        <li>Kremenchuk was a place to work in for Vernadskyi, Utyosov, Maiboroda</li>
+                    </ul>
+                    If you want to learn more, <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D0%BA#%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D0%BE%D1%81%D1%82%D1%96">
+                    click here</a>
+                </article>
+            </div>
             <div class="famous-people-images">
                 <img src="img/shevchenko.jpg" alt="Taras Shevchenko">
                 <img src="img/gogol.jpg" alt ="Mykolai Gogol">
@@ -262,7 +305,76 @@
     <!--Creating section of Future-->
     
     <section id="shop">
-        <h2>Official shop with Kremenchuk's wibe</h2>
+        <h2>Official shop with Kremenchuk's vibe</h2>
+        <h3> You may choose whatever you want, shipping worldwide, free delivery!</h3>
+        <div class="shop-grid">
+            <div class="product-1">
+                <h5>T-shirt</h5>
+                <p>High quality, eye-catching designs</p>
+                <img src="/img/t-shirt.jpg" alt="T-shirt">
+                <p class="price"> $ 10 </p>
+                <button class="add-to-cart">Add to cart</button>
+                <div class="t-shirt-add hidden">
+                    <button class="minus">-</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product-2">
+                <h5>Cap</h5>
+                <p>Want to be fashionable? Buy the cap!</p>
+                <img src="/img/cap.jpg" alt="Cap">
+                <p class="price"> $ 20 </p>
+                <button class="add-to-cart">Add to cart</button>
+                <div class="cap-add hidden">
+                    <button class="minus">-</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product-3">
+                <h5>Tattoo</h5>
+                <p>A fancy one. Buy a temporary tattoo with Kremenchuk's spirit</p>
+                <img src="/img/tattoo.jfif" alt="Tattoo">
+                <p class="price"> $ 5 </p>
+                <button class="add-to-cart">Add to cart</button>
+                <div class="tattoo-add hidden">
+                    <button class="minus">-</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product-4">
+                <h5>Cup</h5>
+                <p>Great choice if you are a coffee-lover</p>
+                <img src="/img/cup.jpg" alt="Cup">
+                <p class="price"> $ 10 </p>
+                <button class="add-to-cart">Add to cart</button>
+                <div class="cup-add hidden">
+                    <button class="minus">-</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product-5">
+                <h5>Sticker</h5>
+                <p>You may stick it to your copybook, laptop or even a car</p>
+                <img src="/img/sticker.jfif" alt="Stickers">
+                <p class="price"> $ 3 </p>
+                <button class="add-to-cart">Add to cart</button>
+                <div class="sticker-add hidden">
+                    <button class="minus">-</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="product-6">
+                <h5>Phone case</h5>
+                <p>Cover your phone with something strong... With Kremenchuk!</p>
+                <img src="/img/chekhol.jpg" alt="Phone case">
+                <p class="price"> $ 15 </p>
+                <button class="add-to-cart">Add to cart</button>
+                <div class="case-add hidden">
+                    <button class="minus">-</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--Creating section of Contacts-->
@@ -309,18 +421,9 @@
         </div>
     </section>
     <footer>
-        <div class="navigation">
-            <p>Created by Denys Brashchenko as a pet project</p>
-            <img src="img/kremenchuk_logo.jpg">
-            <a id="city-logo" href ="index.html">Kremenchuk's tourism website</a>
-            <a href ="#history" class ="navigation-list">History</a>
-            <a href ="#architecture" class ="navigation-list">Architecture</a>
-            <a href ="#food" class ="navigation-list">Food</a>
-            <a href ="#nature" class ="navigation-list">Nature</a>
-            <a href ="#famous-people" class ="navigation-list">Famous people</a>
-            <a href ="#shop" class ="navigation-list">Shop</a>
-            <a href ="#contacts" class ="navigation-list">Contact us</a>
-        </div>
+        <img src="img/kremenchuk_logo.jpg">
+        <p>Created by Denys Brashchenko as a pet project</p>
+        <a href ="#intro-page">Back to the top</a>
     </footer>
     <script src="script.js"></script>
 </body>

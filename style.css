@@ -23,10 +23,7 @@ aside form input {
 }
 a:link {
   text-decoration: none;
-  color:rgb(61, 83, 17);
-}
-.hidden {
-  display: none;
+  color: rgb(61, 83, 17);
 }
 .navigation {
   padding-bottom: 10px;
@@ -294,7 +291,7 @@ h2 {
   background-size: cover;
 }
 #architecture-carousel-2-text {
-  padding-top: 330px;
+  padding-top: 300px;
   width: 300px;
   padding-left: 55px;
   color: whitesmoke;
@@ -409,40 +406,244 @@ h2 {
   padding-left: 50px;
 }
 
-#nature{
+#nature {
   background-color: rgba(52, 36, 158, 0.61);
-  height:900px;
+  height: 900px;
 }
-#nature img{
-  width:500px;
-  height:auto;
-  margin-left:500px;
-  margin-top:30px;
-  margin-bottom:30px;
-  filter:drop-shadow(20px 20px 20px grey);
-  border:5px solid black;
+#nature img {
+  width: 500px;
+  height: auto;
+  margin-left: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  filter: drop-shadow(20px 20px 20px grey);
 }
-#nature article:first-child{
-  color:coral;
-  margin-left:150px;
-  margin-bottom:10px;
+#nature article:first-child {
+  color: coral;
+  margin-left: 150px;
+  margin-bottom: 10px;
 }
-#nature article{
-  margin-left:50px;
-  font-size:30px;
+#nature article {
+  margin-left: 50px;
+  font-size: 30px;
   line-height: 40px;
 }
 
-#nature article:nth-child(2)::first-letter{
-  font-size:45px;
-  color:rgb(31, 28, 28)
+#nature article:nth-child(2)::first-letter {
+  font-size: 45px;
+  color: rgb(31, 28, 28);
 }
-h4{
-  font-size:30px;
-  margin-left:640px;
-  width:200px;
-  padding:20px 0px 10px 50px;
+h4 {
+  font-size: 30px;
+  margin-left: 640px;
+  width: 200px;
+  padding: 20px 0px 10px 50px;
   background-color: rgb(175, 190, 190);
   border-radius: 30px;
+}
+h4:hover {
+  transition: 1s;
+  background-color: black;
+  color: white;
+}
+#famous-people {
+  background-color: rgb(139, 114, 80);
+  padding-top: 1px;
+}
+.famous-people {
+  display: flex;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+.famous-people-intro {
+  width: 600px;
+  padding-left: 10px;
+}
+.famous-people-intro li {
+  padding-bottom: 20px;
+}
+.famous-people-images img {
+  width: 220px;
+  height: auto;
+}
+#shop h3 {
+  margin-left: 400px;
+  text-transform: uppercase;
+}
+.shop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding-left: 100px;
+  text-transform: uppercase;
+}
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6 {
+  height: auto;
+  border-radius: 3px;
+  width: 300px;
+  background-color: rgba(255, 127, 80, 0.762);
+}
+#shop img {
+  width: 80%;
+  max-height: 300px;
+  height: auto;
+  padding-left: 30px;
+}
+h5 {
+  padding-left: 120px;
+}
+p {
+  padding-left: 30px;
+}
+.price {
+  padding-left: 120px;
+  font-size: 20px;
+}
+.add-to-cart {
+  margin-left: 80px;
+  background-color: olive;
+  width: 150px;
+  text-transform: uppercase;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.add-to-cart:hover {
+  background-color: coral;
+  transition: 2s;
+}
+.product-1:hover,
+.product-2:hover,
+.product-3:hover,
+.product-4:hover,
+.product-5:hover,
+.product-6:hover {
+  background-color: olive;
+  transition: 0.5s;
+  font-size: 14px;
+}
+#contacts {
+  height: 800px;
+}
+.contact-form {
+  margin-left: 400px;
+  font-size: 20px;
+  background-color: rgb(208, 203, 203);
+  width: 700px;
+  padding: 30px 0px 50px 60px;
+  border-radius: 5px;
+}
+.contact-form input {
+  margin-bottom: 20px;
+}
+.contact-form button {
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 200px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.contact-form button:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: whitesmoke;
+  transition: 1s;
+  font-size: 17px;
+  width: 270px;
+  height: 55px;
+}
+footer {
+  background-color: aliceblue;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+footer a {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.cart {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  right: 100px;
+  background-color: wheat;
+  border-radius: 25px;
+}
+.cart h3 {
+  padding-left: 70px;
+  font-size: 20px;
+}
+.product-1-cart,
+.product-2-cart,
+.product-3-cart,
+.product-4-cart,
+.product-5-cart,
+.product-6-cart {
+  width:100%;
+  height:60px;
+  background-color:rgb(123, 195, 195);
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+  display: flex;
+}
+.cart h4{
+  font-size:15px;
+  color:black;
+  margin:0px;
+  background-color:none;
+  width:30px;
+  padding:0px;
+  background-color:rgb(123, 195, 195);
+  padding-top:15px;
+  padding-left:10px;
+}
+.cart p{
+  width:50px;
+  text-transform: uppercase;
+  font-size:14px;
+}
+.hidden{
+  display: none;
+}
+.total h4{
+  width:90%;
+  border-radius:0px;
+  padding-left: 10px;
+  margin:0px;
+  background-color: wheat;
+  text-transform: uppercase;
+}
+.total p{
+  font-size:16px;
+  padding-left:80px;
+  font-weight: bold;
+}
+.erase, .checkout{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius:5px;
+  margin-bottom:10px;
 }
 
